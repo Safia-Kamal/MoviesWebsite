@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Website</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+   <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <!-- navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="z-index: 10;">
+  <div class="container">
+    <a class="navbar-brand" href="#" style="color: chocolate; font-size: 30px;">MovieGo</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Comedy</a>
+        </li>
+        <!-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li> -->
+        
+        <li class="nav-item">
+          <a class="nav-link" href="#">Action</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Romance</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Horror</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-danger me-5" type="submit">Search</button>
+        <button class="btn btn-chocolate" type="">Login</button>
+      </form>
+      
+    </div>
+  </div>
+</nav>
+
+
+ <div class="container">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+        <img src="images/firstSec1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+        </div>
+        </div>
+        <div class="carousel-item">
+        <img src="images/firstSec2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+        </div>
+        </div>
+        <div class="carousel-item">
+        <img src="images/firstSec3.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+        </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+    </div>
+</div> 
+
+
+<div class="movie-sections">
+  <!-- ROMANCE SECTION -->
+  <section class="movie-genre">
+    <h2 class="genre-title">ROMANCE</h2>
+    <div class="films-container">
+      <div class="films-row active">
+        <!-- First 4 Romance Films -->
+        <div class="film-card">
+          <img src="images/6.jpg" alt="The Notebook">
+          <h3>The Notebook</h3>
+          <span class="rating">7.8</span>
+        </div>
+        <div class="film-card">
+          <img src="images/5.jpg" alt="Titanic">
+          <h3>Titanic</h3>
+          <span class="rating">7.9</span>
+        </div>
+        <div class="film-card">
+          <img src="images/7.jpg" alt="Eternal Sunshine">
+          <h3>Eternal Sunshine</h3>
+          <span class="rating">8.3</span>
+        </div>
+        <div class="film-card">
+          <img src="images/4.jpg" alt="Crazy Rich Asians">
+          <h3>Crazy Rich Asians</h3>
+          <span class="rating">6.9</span>
+        </div>
+      </div>
+      
+      <!-- Hidden Romance Films -->
+      <div class="films-row">
+        <div class="film-card">
+          <img src="images/3.jpg" alt="La La Land">
+          <h3>La La Land</h3>
+          <span class="rating">8.0</span>
+        </div>
+        <div class="film-card">
+          <img src="images/2.jpg" alt="Silver Linings">
+          <h3>Silver Linings</h3>
+          <span class="rating">7.7</span>
+        </div>
+        <div class="film-card">
+          <img src="images/8.jpg" alt="Me Before You">
+          <h3>Me Before You</h3>
+          <span class="rating">7.4</span>
+        </div>
+        <div class="film-card">
+          <img src="images/1.jpg" alt="Dear John">
+          <h3>Dear John</h3>
+          <span class="rating">6.3</span>
+        </div>
+      </div>
+    </div>
+    <button class="more-btn">More</button>
+  </section>
+
+  <!-- HORROR SECTION -->
+  <section class="movie-genre">
+    <h2 class="genre-title">HORROR</h2>
+    <div class="films-container">
+      <div class="films-row active">
+        <!-- First 4 Horror Films -->
+        <div class="film-card">
+          <img src="images/The Conjuring.jpg" alt="The Conjuring">
+          <h3>The Conjuring</h3>
+          <span class="rating">7.5</span>
+        </div>
+        <div class="film-card">
+          <img src="images/The Witch.jpg" alt="The Witch">
+          <h3>The Witch</h3>
+          <span class="rating">7.0</span>
+        </div>
+        <div class="film-card">
+          <img src="images/Insidious.jpg" alt="Insidious">
+          <h3>Insidious</h3>
+          <span class="rating">6.8</span>
+        </div>
+        <div class="film-card">
+          <img src="images/Hereditary.jpg" alt="Hereditary">
+          <h3>Hereditary</h3>
+          <span class="rating">7.3</span>
+        </div>
+      </div>
+      
+      <!-- Hidden Horror Films -->
+      <div class="films-row">
+        <div class="film-card">
+          <img src="images/A Quiet Place.jpg" alt="A Quiet Place">
+          <h3>A Quiet Place</h3>
+          <span class="rating">7.5</span>
+        </div>
+        <div class="film-card">
+          <img src="images/It.jpg" alt="It">
+          <h3>It</h3>
+          <span class="rating">7.3</span>
+        </div>
+        <div class="film-card">
+          <img src="images/Get Out.jpg" alt="Get Out">
+          <h3>Get Out</h3>
+          <span class="rating">7.7</span>
+        </div>
+        <div class="film-card">
+          <img src="images/The Babadook.jpg" alt="The Babadook">
+          <h3>The Babadook</h3>
+          <span class="rating">6.8</span>
+        </div>
+      </div>
+    </div>
+    <button class="more-btn">More</button>
+  </section>
+
+  <!-- COMEDY SECTION -->
+  <section class="movie-genre">
+    <h2 class="genre-title">COMEDY</h2>
+    <div class="films-container">
+      <div class="films-row active">
+        <!-- First 4 Comedy Films -->
+        <div class="film-card">
+          <img src="images/Superbad.jpg" alt="Superbad">
+          <h3>Superbad</h3>
+          <span class="rating">7.6</span>
+        </div>
+        <div class="film-card">
+          <img src="images/The Hangover.jpg" alt="The Hangover">
+          <h3>The Hangover</h3>
+          <span class="rating">7.7</span>
+        </div>
+        <div class="film-card">
+          <img src="images/Anchorman.jpg" alt="Anchorman">
+          <h3>Anchorman</h3>
+          <span class="rating">7.2</span>
+        </div>
+        <div class="film-card">
+          <img src="images/Bridesmaids.jpg" alt="Bridesmaids">
+          <h3>Bridesmaids</h3>
+          <span class="rating">6.8</span>
+        </div>
+      </div>
+      
+      <!-- Hidden Comedy Films -->
+      <div class="films-row">
+        <div class="film-card">
+          <img src="images/Step Brothers.jpg" alt="Step Brothers">
+          <h3>Step Brothers</h3>
+          <span class="rating">6.9</span>
+        </div>
+        <div class="film-card">
+          <img src="images/Zoolander.jpg" alt="Zoolander">
+          <h3>Zoolander</h3>
+          <span class="rating">6.6</span>
+        </div>
+        <div class="film-card">
+          <img src="images/40-Year-Old Virgin.jpg" alt="The 40-Year-Old Virgin">
+          <h3>40-Year-Old Virgin</h3>
+          <span class="rating">7.1</span>
+        </div>
+        <div class="film-card">
+          <img src="images/Tropic Thunder.jpg" alt="Tropic Thunder">
+          <h3>Tropic Thunder</h3>
+          <span class="rating">7.1</span>
+        </div>
+      </div>
+    </div>
+    <button class="more-btn">More</button>
+  </section>
+</div>
+
+
+
+<section class="season-section mt-5">
+        <div class="container">
+            <h1 class="section-title">NEW ITEMS OF THIS SEASON</h1>
+            
+            <div id="seasonCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row g-4">
+                            <!-- Item 1 -->
+                            <div class="col-md-3 col-sm-6">
+                                <div class="item-card">
+                                    <div class="item-poster" style="background-image: url('images/Whitney.jpg')"></div>
+                                    <div class="item-info">
+                                        <h5 class="item-title">Whitney</h5>
+                                        <p class="item-genre">Romance, Drama</p>
+                                        <p class="item-rating">6.3</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Item 2 -->
+                            <div class="col-md-3 col-sm-6">
+                                <div class="item-card">
+                                    <div class="item-poster" style="background-image: url('images/Blindspotting.jpg')"></div>
+                                    <div class="item-info">
+                                        <h5 class="item-title">Blindspotting</h5>
+                                        <p class="item-genre">Comedy, Drama</p>
+                                        <p class="item-rating">7.9</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Item 3 -->
+                            <div class="col-md-3 col-sm-6">
+                                <div class="item-card">
+                                    <div class="item-poster" style="background-image: url('images/I\ Dream\ in\ Another\ Language.jpg')"></div>
+                                    <div class="item-info">
+                                        <h5 class="item-title">I Dream in Another Language</h5>
+                                        <p class="item-genre">Action, Thriller</p>
+                                        <p class="item-rating">8.4</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Item 4 -->
+                            <div class="col-md-3 col-sm-6">
+                                <div class="item-card">
+                                    <div class="item-poster" style="background-image: url('images/Benched.jpg')"></div>
+                                    <div class="item-info">
+                                        <h5 class="item-title">Benched</h5>
+                                        <p class="item-genre">Comedy</p>
+                                        <p class="item-rating">7.1</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <div class="row g-4">
+                            <!-- Item 5 -->
+                            <div class="col-md-3 col-sm-6">
+                                <div class="item-card">
+                                    <div class="item-poster" style="background-image: url('images/1.jpg')"></div>
+                                    <div class="item-info">
+                                        <h5 class="item-title">Extra Item 1</h5>
+                                        <p class="item-genre">Adventure</p>
+                                        <p class="item-rating">7.5</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Item 6 -->
+                            <div class="col-md-3 col-sm-6">
+                                <div class="item-card">
+                                    <div class="item-poster" style="background-image: url('images/2.jpg')"></div>
+                                    <div class="item-info">
+                                        <h5 class="item-title">Extra Item 2</h5>
+                                        <p class="item-genre">Sci-Fi</p>
+                                        <p class="item-rating">8.0</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Item 7 -->
+                            <div class="col-md-3 col-sm-6">
+                                <div class="item-card">
+                                    <div class="item-poster" style="background-image: url('images/2.jpg')"></div>
+                                    <div class="item-info">
+                                        <h5 class="item-title">Extra Item 3</h5>
+                                        <p class="item-genre">Horror</p>
+                                        <p class="item-rating">6.8</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Item 8 -->
+                            <div class="col-md-3 col-sm-6">
+                                <div class="item-card">
+                                    <div class="item-poster" style="background-image: url('images/4.jpg')"></div>
+                                    <div class="item-info">
+                                        <h5 class="item-title">Extra Item 4</h5>
+                                        <p class="item-genre">Documentary</p>
+                                        <p class="item-rating">8.2</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="carousel-control-prev" type="button" data-bs-target="#seasonCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#seasonCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+<div class="latest-news-section">
+  <div class="container">
+    <h2 class="section-title">LATEST NEWS</h2>
+    
+    <div class="news-grid">
+      <!-- Left Column - With REAL Images -->
+      <div class="news-images">
+        <!-- News Item 1 -->
+        <div class="news-image-container">
+          <img src="images/latest1.avif" 
+               alt="Theater News" 
+               class="news-image">
+          <div class="news-item">
+            <h3>THE NEWS OF THEATER</h3>
+            <p class="date">29 Jan 2021</p>
+            <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet perferendis, accusantium sit deleniti sequi nemo aperiam repellat iusto ducimus quae?</p>
+            <div class="stats">
+              <span>📌 129 Like</span> | 
+              <span>📌 58 comments</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- News Item 2 -->
+        <div class="news-image-container">
+          <img src="images/latest2.avif" 
+               alt="Theater Event" 
+               class="news-image">
+          <div class="news-item">
+            <h3>THE NEWS OF THEATER</h3>
+            <p class="date">22 May 2022</p>
+            <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut unde quam ratione velit tenetur earum rerum id aliquid enim consequuntur!</p>
+            <div class="stats">
+              <span>📌 127 Like</span> | 
+              <span>📌 42 comments</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Right Column - Additional Content -->
+      <div class="news-sidebar">
+        <div class="sidebar-widget">
+          <h4>POPULAR TAGS</h4>
+          <div class="tags">
+            <span>#Theater</span>
+            <span>#Performance</span>
+            <span>#Drama</span>
+            <span>#Art</span>
+            <span>#Stage</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<footer class="bg-dark text-white py-5">
+    <div class="container">
+        <div class="row">
+            <!-- GET UPDATE SECTION -->
+            <div class="col-md-4 mb-4">
+                <h5 class="text-chocolate mb-3">GET UPDATE SIGN UP NOW !</h5>
+                <form class="mb-4">
+                    <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="Enter Your Email">
+                    </div>
+                    <button type="submit" class="btn btn-chocolate">Submit</button>
+                </form>
+            </div>
+
+            <!-- QUICK LINKS SECTION -->
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-3 mb-4">
+                        <h6 class="text-chocolate">LANGUAGE MOVIES</h6>
+                        <ul class="list-unstyled">
+                            <li>English Movie</li>
+                            <li>Tamil Movie</li>
+                            <li>Punjabi Movie</li>
+                            <li>Hindi Movie</li>
+                            <li>Mahyalam Movie</li>
+                            <li>Action Movie</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3 mb-4">
+                        <h6 class="text-chocolate">TAG CLOUD</h6>
+                        <ul class="list-unstyled">
+                            <li>Analyze</li>
+                            <li>Design</li>
+                            <li>Express</li>
+                            <li>Audio</li>
+                            <li>Experiment</li>
+                            <li>Share</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3 mb-4">
+                        <h6 class="text-chocolate">BY PRESENTER</h6>
+                        <ul class="list-unstyled">
+                            <li>Blog</li>
+                            <li>News</li>
+                            <li>Sustain</li>
+                            <li>Business</li>
+                            <li>Expertize</li>
+                            <li>Video</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3 mb-4">
+                        <h6 class="text-chocolate">SUBSCRIPTION</h6>
+                        <p>Subscribe your Email address for latest news & updates.</p>
+                        <form class="mb-2">
+                            <input type="email" class="form-control form-control-sm mb-2" placeholder="Enter Email Address">
+                            <button type="submit" class="btn btn-sm btn-chocolate">submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- COPYRIGHT SECTION -->
+        <div class="row mt-4">
+            <div class="col-12 text-center">
+                <p class="mb-0">© 2024 MovieGo. All Rights Reserved | Design by Safiya Kamal ❤️</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
